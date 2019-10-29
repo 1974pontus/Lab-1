@@ -6,18 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>text based game</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </head>
   <body>
     <header class="gamer">
       <h3 id="playerName"></h3>
-      <button onclick="myFunction(); this.style.visibility= 'hidden';">
+      <button onclick="hideButton(); this.style.visibility= 'hidden';">
         <h1>VEM ÄR DU?</h1></button
       ><br />
     </header>
     <div class="container">
-      <div class="text">
-        <p>
+      <div>
+        <p id="text">
           Alarmet drar igång! Harpa! för den har lugnande effekt. Du hade
           Marimba länge som alla andra, men stressnivån sköt i höjden alltså.
           Vad kan denna dag tänkas ha att erbjuda? Du ångrar bittert quizkvällen
@@ -26,11 +26,10 @@
           vad man vill erkänna för sig själv i glädjeyran över segern i quizzet.
           Tänker du gå upp?
         </p>
-
-        <h2>
-          <button onclick="yesFunction()"><h1>JA!</h1></button> eller
-          <button onclick="noFunction()"><h1>NEJ!</h1></button>
-        </h2>
+        <div>
+          <input id="inputAnswer" type="text" placeholder="Mata in ditt svar!">
+          <button onclick="handleAction()">👀</button>
+        </div>
       </div>
     </div>
   </body>
