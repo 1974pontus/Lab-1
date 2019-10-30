@@ -17,14 +17,14 @@ const scenes = [
     },
     {
         message: 'Ja nu har vi kommit så här långt! Kläderna är på och ryggsäcken är packad med matlåda och dator. Ut genom dörren, rusa ner till hållplatsen! Dags att välja transportmedel. Du har tre alternativ: 1. Buss 60( kortast promenad när du kliver av). 2. Spårvagn 8( näst längst promenad men kortast resväg).3. Gå( såklart längst promenad, men vardagsmotionen i ett stillasittande yrke är ju otroligt viktigt om man vill undvika blodpropp i alldeles för ung ålder).',
-        actions: [{ right: 'ja', next: 4 }, { wrong: 'nej', next: 0 }]
+        actions: [{ right: '1', next: 4 }, { wrong: '2', next: 0 }]
     },
     {
-        message: 'välkommen till spelet',
+        message: 'Väl framme! slår in koden 1085 på dörren. går in och kollar schemat. Faaan!! Inga lektioner idag. Jämna/ojämna veckor? Att du aldrig lär dig. Jaja! Vad gör du nu då? Sätter du dig och repeterar kapitlet om javaScript-funktioner resten av dagen eller passar du på att åka och storhandla på Willy’s till lanpartyt du arrangerar i helgen? Power king och salta pinnar är ju mycket billigare där än på Coop Avenyn. Du väljer att plugga va?',
         actions: [{ right: 'ja', next: 5 }, { wrong: 'nej', next: 0 }]
     },
     {
-        message: 'fortsättning i spelet',
+        message: 'grattis! om två år har du ett fett kneg med fussball och beer pong på betald arbetstid varje fredag. Du klarade spelet!!',
         actions: [{ right: 'ja', next: 6 }, { wrong: 'nej', next: 0 }]
     }
 ]

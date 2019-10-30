@@ -37,6 +37,7 @@ body {
   background-color: honeydew;
   padding: 2rem;
   border-radius: 3rem;
+  font-size: 2rem;
 }
 
 button {
@@ -52,6 +53,10 @@ button:hover {
 }
 
 button:focus {outline: 0;}
+input {
+padding: 0.5rem;
+font-size: 2rem;
 
+}
 input:focus {outline: 0;}
 
