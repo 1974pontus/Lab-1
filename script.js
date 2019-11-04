@@ -21,15 +21,15 @@ const scenes = [
         actions: [{ answer: 'ja', nextScene: 3 }, { answer: 'nej', nextScene: 6 }]
     },
     {
-        message: 'Ja nu har vi kommit så här långt! Kläderna är på och ryggsäcken är packad med matlåda och dator. Ut genom dörren, rusa ner till hållplatsen! Dags att välja transportmedel. Du har tre alternativ:\n 1. Buss 60( kortast promenad när du kliver av).\n2. Gå( såklart längst promenad, men vardagsmotionen i ett stillasittande yrke är ju otroligt viktigt om man vill undvika blodpropp i alldeles för ung ålder).\n välj 1 eller 2',
-        actions: [{ answer: '2', nextScene: 4 }, { answer: '1', nextScene: 6 }]
+        message: 'Ja nu har vi kommit så här långt! Kläderna är på och ryggsäcken är packad med matlåda och dator. Ut genom dörren, rusa ner till hållplatsen! Dags att välja transportmedel. Du har tre alternativ:\n 1. Buss 60( kortast promenad när du kliver av).\n2. Gå( såklart längst promenad, men vardagsmotionen i ett stillasittande yrke är ju otroligt viktigt om man vill undvika blodpropp i alldeles för ung ålder).\n3. Spårvagn 8( näst längst promenad men kortast resväg). \nVälj 1, 2 eller 3',
+        actions: [{ answer: '2', nextScene: 4 }, { answer: '1', nextScene: 6 }, { answer: '3', nextScene: 6 }]
     },
     {
         message: 'Väl framme! slår in koden 1085 på dörren. går in och kollar schemat. Faaan!! Inga lektioner idag. Jämna/ojämna veckor? Att du aldrig lär dig. Jaja! Vad gör du nu då? Sätter du dig och repeterar kapitlet om javaScript-funktioner resten av dagen eller passar du på att åka och storhandla på Willy’s till lanpartyt du arrangerar i helgen? Power king och salta pinnar är ju mycket billigare där än på Coop Avenyn. Du väljer att plugga va? \nja eller nej?',
         actions: [{ answer: 'ja', nextScene: 5 }, { answer: 'nej', nextScene: 6 }]
     },
     {
-        message: 'grattis! om två år har du ett fett kneg med fussball och beer pong på betald arbetstid varje fredag. Du klarade spelet!!',
+        message: 'grattis! om två år har du ett fett kneg med fussball och beer pong på betald arbetstid varje fredag. Du klarade spelet!!\n 👑' ,
         actions: [],
         isGameWon: true
     },
@@ -57,7 +57,7 @@ const scenes = [
 function showScene(scene) {
     text.innerText = scene.message;
     if (scene.isGameWon) {
-        console.log('hurray!!!')
+        document.getElementById("inputs").innerHTML = '';
     }
 }
 
