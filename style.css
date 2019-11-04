@@ -26,9 +26,9 @@ body {
   width: 50rem;
   max-width: 70%;
   background-color: rgba(211, 210, 201, 0.75);
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 3rem;
-  margin: 5rem;
+  margin: 4rem;
 }
 
 .container {
