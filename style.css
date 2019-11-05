@@ -12,19 +12,20 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  
   background-image: url(gregory-culmer-lHmTNLu0E3k-unsplash.jpg);
+  background-attachment: fixed;
   
   
-  /*background-color: gray;*/
+  
 }
-.gamer {
+header {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 50rem;
-  max-width: 70%;
+  max-width: 100%;
   background-color: rgba(211, 210, 201, 0.75);
   padding: 1.5rem;
   border-radius: 3rem;
@@ -35,15 +36,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50rem;
-  max-width: 70%;
+  box-sizing: border-box;
+  /*width: 50rem;*/
+  max-width: 100%;
   background-color: rgba(211, 210, 201, 0.75);
   padding: 2rem;
   border-radius: 3rem;
   font-size: 2rem;
+
 }
 
+
+
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 2rem;
   border-radius: 0.5rem;
   border-style: none;
